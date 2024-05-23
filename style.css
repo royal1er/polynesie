@@ -1,0 +1,204 @@
+body {
+    margin: 0 auto;
+    max-width: 100vw;
+    position: relative;
+}
+
+* {
+    box-sizing: border-box;
+}
+.cormorant-garamond-light {
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .cormorant-garamond-regular {
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .cormorant-garamond-medium {
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .cormorant-garamond-semibold {
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  .cormorant-garamond-bold {
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .cormorant-garamond-light-italic {
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  .cormorant-garamond-regular-italic {
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .cormorant-garamond-medium-italic {
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 500;
+    font-style: italic;
+  }
+  
+  .cormorant-garamond-semibold-italic {
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 600;
+    font-style: italic;
+  }
+  
+  .cormorant-garamond-bold-italic {
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+
+#header {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.2), 
+      rgba(0, 0, 0, 0.4)
+    ),url("./images/plage.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+#head-logo{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 10vh;
+    width: 100vw;
+    color: white;
+}
+
+#head-logo{
+    position: relative;
+    font-size: 2em;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+#head-subsection{
+    position: relative;
+    padding-right: 10px;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+#bienvenue{
+    position: absolute;
+    width: 100vw;
+    height: 200px;
+    bottom: 0;
+    text-align: center;
+}
+
+#bienvenue h1{
+    font-size: 4em;
+    font-family: "Cormorant Garamond";
+    color:white;
+    margin:0;
+}
+
+#bienvenue span{
+    font-size: 2em;
+    font-family: "Cormorant Garamond";
+    font-style: italic;
+    color:white;
+    margin:0;
+}
+
+#menu{
+    margin-left: 10px;
+}
+#archipel{
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  
+}
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 10px;
+}
+
+.image-item {
+  position: relative;
+  overflow: hidden;
+}
+
+.image-item img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.image-text {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: white;
+  font-size: 1em;
+  text-shadow: 0px 0px 8px rgba(0,0,0,0.8);
+  z-index: 10;
+}
+
+/* Première ligne : chaque image occupe deux des six colonnes */
+.image-item:nth-child(-n+3) {
+  grid-column: span 2;
+}
+
+/* Deuxième ligne : chaque image occupe trois des six colonnes */
+.image-item:nth-last-child(-n+2) {
+  grid-column: span 3;
+}
+#presentation{
+  position: relative;
+  height: 300px;
+
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+}
+
+#presentation_textes{
+  text-align: center;
+}
+#presentation_iles{
+  position: relative;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content:flex-start;
+  align-items: end;
+  
+}
+
+#lettrine{
+  width:50px;
+  font-family:"Cormorant Garamond";
+  font-size:120px;
+  color: aquamarine;
+}
